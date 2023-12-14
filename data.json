@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Wedding Cake",
+    "description": "Designed for weddings, tiered, decorated to match wedding theme/colors.",
+    "price": 700,
+    "imageUrl": "assets/cake1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Anniversary Cake",
+    "description": "Celebrates marriage milestones, may reflect years, similar to weddings.",
+    "price": 450,
+    "imageUrl": "assets/cake2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Birthday Cake",
+    "description": "Staple for birthdays, various shapes, sizes, flavors, adorned with candles.",
+    "price": 550,
+    "imageUrl": "assets/cake3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Chocolate Cake",
+    "description": "Classic favorite, made with cocoa or chocolate, rich and indulgent.",
+    "price": 650,
+    "imageUrl": "assets/cake4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Red Velvet Cake",
+    "description": "Distinctive red color, cocoa-infused, layered, cream cheese topping.",
+    "price": 550,
+    "imageUrl": "assets/cake5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Cheese Cake",
+    "description": "Dessert with crust, creamy filling of cream cheese, sugar, and eggs.",
+    "price": 450,
+    "imageUrl": "assets/cake6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Fruit Cake",
+    "description": "Delicious fruit-filled cake with a medley of flavors.",
+    "price": 600,
+    "imageUrl": "assets/cake7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Caramel Delight Cake",
+    "description": "Indulgent caramel-flavored cake with layers of sweetness.",
+    "price": 700,
+    "imageUrl": "assets/cake8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Lemon Blueberry Cake",
+    "description": "Refreshing combination of lemon and blueberry in a delightful cake.",
+    "price": 550,
+    "imageUrl": "assets/cake9.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Strawberry Shortcake",
+    "description": "Classic dessert featuring fresh strawberries and light sponge cake.",
+    "price": 500,
+    "imageUrl": "assets/cake10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Mint Chocolate Chip Cake",
+    "description": "Decadent chocolate cake with a hint of mint and chocolate chips.",
+    "price": 650,
+    "imageUrl": "assets/cake11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Coffee Walnut Cake",
+    "description": "Rich coffee-infused cake with crunchy walnuts for added texture.",
+    "price": 600,
+    "imageUrl": "assets/cake12.jpg"
+  }
+]

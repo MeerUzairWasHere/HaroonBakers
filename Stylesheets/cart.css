@@ -1,0 +1,184 @@
+﻿
+
+
+.cart-container {
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+
+
+.cartItem-list-thead {
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    place-items: center;
+    align-content: center;
+    font-weight: 600;
+    padding: 10px 15px;
+    line-height: normal;
+    border: none;
+    color: var(--primary-500);
+    border-bottom: 1px solid #eee;
+}
+
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    place-items: center;
+    align-content: center;
+    padding-block: 1rem;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+
+.table-btns {
+    display: flex;
+    gap: 1rem;
+    background-color: #EEEEEE;
+    width: fit-content;
+    align-items: center;
+}
+
+    .table-btns > button {
+        border: none;
+        padding: 1rem;
+        color: var(--primary-500);
+    }
+
+.overview-list h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: var(--primary-500);
+}
+
+.overview-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-block: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+    .overview-item span {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+
+        .overview-item span:first-child {
+            font-weight: 500; /* or any other styling you want for the first child */
+            color: var(--primary-500);
+        }
+
+
+.overview-list button {
+    height: 50px;
+    margin-top: 2rem;
+    width: 100%;
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: var(--primary-500);
+}
+
+.hidden-for-pc {
+    display: none;
+}
+
+.remove-btn {
+    border: none;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.cart-item:hover .remove-btn {
+    display: block;
+}
+
+.remove-btn-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .splide-card-container {
+        height: 360px;
+    }
+
+   
+    .cart-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 1rem 0;
+    }
+
+    .cartItem-list-thead {
+        display: none;
+    }
+
+    .cart-item > a > img {
+        display: none;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-block: 2rem;
+        padding: 0;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
+    }
+
+        .cart-item > div {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            padding: 10px 15px;
+            line-height: normal;
+            color: var(--primary-500);
+        }
+
+    .hidden-for-pc {
+        display: grid;
+    }
+
+    .cart-item > div > span {
+        font-weight: 700;
+        color: #5e5e5e;
+    }
+
+    .overview-list h2 {
+        font-size: 1.4rem;
+    }
+
+    .overview-list h2, .overview-item {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .overview-item > span {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    .remove-btn-mobile {
+        display: block;
+        border: none;
+    }
+
+    .cart-item:hover .remove-btn {
+        display: none;
+    }
+}

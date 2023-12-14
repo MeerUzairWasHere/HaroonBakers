@@ -1,0 +1,278 @@
+﻿
+
+
+
+.about-us-section {
+    margin: 4rem auto;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.about-us-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-us-images-1 {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    border-radius: 1rem 0 1rem 0;
+}
+
+.about-us-images-2 {
+    position: absolute;
+    width: 80%;
+    border-radius: 1rem 0 1rem 0;
+    left: -40px;
+    bottom: 134px;
+}
+
+
+
+.about-us-content-title {
+    font-family: var(--cursive-font);
+    color: var(--primary-500);
+}
+
+.about-us-content-sub-title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    font-family: var(--Garamond-font);
+}
+
+.about-us-content-mission {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.about-us-content-mission-title {
+    display: flex;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-500);
+    font-family: var(--Garamond-font);
+    padding-top: 10px;
+}
+
+.mission-svg {
+    position: absolute;
+}
+
+
+.about-us-content-mission-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--grey-500);
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.about-us-tags {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    width: 90%;
+    padding-top: 16px;
+}
+
+    .about-us-tags > span > img {
+        margin-right: 10px;
+        font-size: 16px;
+        color: var(--primary-500);
+    }
+
+    .about-us-tags > span {
+        font-weight: 400;
+        color: var(--grey-500);
+        margin-bottom: 10px;
+    }
+
+.about-us-welcome-message {
+    width: 90%;
+    margin-top: 2rem;
+    border: 1px solid #EEEEEE;
+    padding: 20px 45px;
+    border-radius: 10px;
+}
+
+    .about-us-welcome-message > p {
+        width: 90%;
+        margin: auto;
+        font-size: 1.15rem;
+        font-weight: 400;
+        color: var(--grey-500);
+        line-height: 1.4rem;
+        text-align: justify;
+    }
+
+
+.about-us-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.about-us-card {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 10px 6px;
+}
+
+.about-us-cards-content {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-cards-content-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+.about-us-cards-content-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color1);
+    font-family: var(--Garamond-font);
+    margin-bottom: 0;
+    transition: 0.35s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+   
+   
+
+   
+
+    /*----------------------------   about us section media query ------------------------------------*/
+    .about-us-section {
+        margin: 1rem auto;
+    }
+
+    .about-us-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-us-images {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .about-us-images-1 {
+        display: none;
+    }
+
+    .about-us-images-2 {
+        display: none;
+    }
+
+
+
+    .about-us-content-title {
+        font-size: 1.2rem;
+    }
+
+    .about-us-content-sub-title {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    .about-us-content-mission {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: justify;
+    }
+
+    .about-us-content-mission-title {
+        padding-top: 2px;
+    }
+
+    .mission-svg {
+        position: absolute;
+        left: 76px;
+    }
+
+
+    .about-us-content-mission-description {
+        font-size: 1.230rem;
+    }
+
+    .about-us-tags {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+
+    .about-us-welcome-message {
+        width: 100%;
+        margin-block: 1rem;
+        padding: 15px 10px;
+    }
+
+        .about-us-welcome-message > p {
+            width: 100%;
+            text-align: justify;
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+        }
+
+
+    .about-us-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-card {
+        justify-content: center;
+        padding: 37px 6px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .about-us-card > img {
+            width: 20%;
+        }
+
+    .about-us-cards-content-number {
+        font-size: 2.5rem;
+    }
+
+    .about-us-cards-content-title {
+        font-size: 2rem;
+    }
+}

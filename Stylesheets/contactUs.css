@@ -1,0 +1,289 @@
+﻿
+
+.contact-us-section {
+    margin-top: 4rem;
+}
+
+
+.contact-us-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-card {
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
+    border-radius: 10px;
+}
+
+.shop-image-div {
+    width: 250px;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+}
+
+    .shop-image-div > img {
+        transition: 0.35s;
+        width: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+        .shop-image-div > img:hover {
+            transition: 0.35s;
+            transform: scale(1.2);
+        }
+
+.contact-us-card-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-us-card-content-title {
+    font-size: 1.75rem;
+    color: var(--primary-500);
+    font-family: var(--Garamond-font);
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+    .contact-us-card-content-title::after {
+        content: url(../assets/line.svg);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -22px;
+    }
+
+.contact-us-card-content > ul {
+    height: 0;
+}
+
+    .contact-us-card-content > ul > li {
+        margin-block: 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+        .contact-us-card-content > ul > li > a {
+            color: var(--grey-500);
+            font-size: 1.125rem;
+            transition: 0.35s;
+        }
+
+            .contact-us-card-content > ul > li > a:hover {
+                color: var(--primary-500);
+            }
+
+.form-section {
+    text-align: center;
+    background-image: linear-gradient(rgba(9, 22, 29, 0.9), rgba(9, 22, 29, 0.9)), url(../assets/carousel-image-2.jpg);
+    background-size: 100% 200%;
+    background-position: bottom;
+    object-fit: cover;
+    margin-block: 5rem;
+    border-radius: 1.5rem;
+}
+
+    .form-section h2 {
+        padding-top: 5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--primary-500);
+        line-height: 1.625rem;
+        font-family: var(--cursive-font);
+        display: inline-block;
+    }
+
+
+    .form-section h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #FFF;
+        font-family: var(--Garamond-font);
+        margin-block: 2rem;
+    }
+
+.input-container {
+    display: flex;
+    gap: 2rem;
+    width: 90%;
+    margin-inline: auto;
+}
+
+    .input-container input {
+        width: 100%;
+        background: #09161D;
+        border: 1px solid rgba(238, 238, 238, 0.2);
+        border-radius: 50px;
+        height: 55px;
+        padding: 20px 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+.message-box {
+    margin: 3rem 0;
+}
+
+    .message-box textarea {
+        width: 90%;
+        background: #09161D;
+        border: 1px solid rgba(238, 238, 238, 0.2);
+        border-radius: 10px;
+        height: 200px;
+        padding: 20px 20px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+#Button1 {
+    width: 50%;
+    border-radius: 50px;
+    background-color: var(--primary-500);
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #FFF;
+    height: 55px;
+    z-index: 2;
+    transition: 0.3s ease all;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    margin: 4rem;
+}
+
+    #Button1:hover {
+        color: var(--primary-500);
+        background-color: #FFF;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .splide-card-container {
+        height: 360px;
+    }
+
+   
+    /*--------------------------- card -----------------------------------------*/
+    .contact-us-section {
+        margin-top: 2rem;
+    }
+
+
+
+
+    .contact-us-card {
+        flex-direction: column;
+    }
+
+    .shop-image-div {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+        .shop-image-div > img {
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+            .shop-image-div > img:hover {
+                transition: 0.35s;
+                transform: scale(1.2);
+            }
+
+    .contact-us-card-content {
+        height: 250px;
+        text-align: center;
+    }
+
+        .contact-us-card-content > ul > li > a {
+            text-align: start;
+        }
+
+    /* ---------------------------------------form -------------------------- */
+
+
+    .form-section {
+        background-size: 404% 231%;
+        margin: 2rem;
+        margin-inline: auto;
+    }
+
+
+
+        .form-section h2 {
+            padding-top: 3rem;
+        }
+
+
+        .form-section h1 {
+            font-size: 2.5rem;
+        }
+
+
+    .input-container {
+        flex-direction: column;
+    }
+
+
+
+    .message-box {
+        margin: 2rem 0;
+    }
+
+        .message-box textarea {
+            width: 90%;
+            background: #09161D;
+            border: 1px solid rgba(238, 238, 238, 0.2);
+            border-radius: 10px;
+            height: 200px;
+            padding: 20px 20px;
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+    #Button1 {
+        margin: 2rem;
+    }
+}
