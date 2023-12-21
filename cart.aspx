@@ -77,7 +77,7 @@
 
         const fetchDataFromServer = async () => {
             try {
-                const resp = await fetch("../data.json");
+                const resp = await fetch("../db/    data.json");
                 const data = await resp.json();
                 renderProducts(data); // Render products after data is fetched
             } catch (err) {

@@ -1,4 +1,10 @@
-﻿
+﻿.carousal-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 .contact-us-section {
     margin-top: 4rem;
@@ -104,12 +110,12 @@
         font-weight: 700;
         color: #FFF;
         font-family: var(--Garamond-font);
-        margin-block: 2rem;
+        margin-block: 1rem;
     }
 
 .input-container {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     width: 90%;
     margin-inline: auto;
 }
@@ -146,7 +152,7 @@
     width: 50%;
     border-radius: 50px;
     background-color: var(--primary-500);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #FFF;
     height: 55px;
@@ -203,7 +209,7 @@
         height: 360px;
     }
 
-   
+
     /*--------------------------- card -----------------------------------------*/
     .contact-us-section {
         margin-top: 2rem;
@@ -252,7 +258,7 @@
 
 
         .form-section h2 {
-            padding-top: 3rem;
+            padding-top: 1rem;
         }
 
 
@@ -268,7 +274,7 @@
 
 
     .message-box {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
         .message-box textarea {
@@ -284,6 +290,6 @@
         }
 
     #Button1 {
-        margin: 2rem;
+        margin: 1rem;
     }
 }

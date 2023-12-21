@@ -166,7 +166,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="data.json" />
+    <Content Include="db\data.json" />
     <None Include="packages.config" />
     <Content Include="Main.Master" />
     <None Include="Web.Debug.config">

@@ -22,7 +22,7 @@
         <div class="about-us-container">
             <div  class="about-us-content">
                 <h4 data-aos="fade-right" class="about-us-content-title">Introduction of Haroon Bakers</h4>
-                <h4 data-aos="fade-right" class="about-us-content-sub-title">Welcome to Haroon Bakery, where the art of baking meets unparalleled expertise!</h4>
+                <h4 class="about-us-content-sub-title">Welcome to Haroon Bakery, where the art of baking meets unparalleled expertise!</h4>
                 <div data-aos="fade-right" class="about-us-content-mission">
                       <h3 class="about-us-content-mission-title">Our Mission</h3>
                     <p class="about-us-content-mission-description">With years of experience, Haroon Bakery takes pride in being your go-to destination for delightful baked goods. Our mission is to provide an exceptional culinary experience that has stood the test of time, much like the enduring quality of our products.</p>

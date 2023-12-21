@@ -13,47 +13,51 @@ namespace HaroonBakersLatest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string jsonFilePath = @"U:\Workspace\NITS\HaroonBakersLatest\data.json";
+      
+    //        string relativePath = "~/data.json";
+    //        string physicalPath = Server.MapPath(relativePath);
 
-            // Read the entire JSON file as a string
-            string jsonString = File.ReadAllText(jsonFilePath);
+    //        string jsonFilePath = physicalPath;
 
-            List<CardModel> data = Newtonsoft.Json.JsonConvert.DeserializeObject<List<CardModel>>(jsonString);
+    //        // Read the entire JSON file as a string
+    //        string jsonString = File.ReadAllText(jsonFilePath);
 
-            StringBuilder htmlBuilder = new StringBuilder();
+    //        List<CardModel> data = Newtonsoft.Json.JsonConvert.DeserializeObject<List<CardModel>>(jsonString);
 
-            foreach (var card in data)
-            {
-                htmlBuilder.AppendLine($@"
-    <li>
-        <asp:HyperLink
-            ID=""HyperLink{card.Id}""
-            NavigateUrl=""#""
-            runat=""server"">{card.Title}</asp:HyperLink>
-    </li>");
+    //        StringBuilder htmlBuilder = new StringBuilder();
 
-            }
+    //        foreach (var card in data)
+    //        {
+    //            htmlBuilder.AppendLine($@"
+    //<li>
+    //    <asp:HyperLink
+    //        ID=""HyperLink{card.Id}""
+    //        NavigateUrl=""#""
+    //        runat=""server"">{card.Title}</asp:HyperLink>
+    //</li>");
 
-            string dynamicHtml = htmlBuilder.ToString();
-            ULcontainer.InnerHtml = dynamicHtml;
-            ULcontainerMobile.InnerHtml = dynamicHtml;
+    //        }
 
-            StringBuilder footerHtmlBuilder = new StringBuilder();
-            for (int card = 1 ; card <= 10; card++)
-            {
-                footerHtmlBuilder.AppendLine($@"
-    <li>
-        <asp:HyperLink
-            ID=""HyperLink{data[card].Id}""
-            NavigateUrl=""#""
-            runat=""server"">{data[card].Title}</asp:HyperLink>
-    </li>");
+    //        string dynamicHtml = htmlBuilder.ToString();
+    //        ULcontainer.InnerHtml = dynamicHtml;
+    //        ULcontainerMobile.InnerHtml = dynamicHtml;
 
-            }
+    //        StringBuilder footerHtmlBuilder = new StringBuilder();
+    //        for (int card = 1 ; card <= 10; card++)
+    //        {
+    //            footerHtmlBuilder.AppendLine($@"
+    //<li>
+    //    <asp:HyperLink
+    //        ID=""HyperLink{data[card].Id}""
+    //        NavigateUrl=""#""
+    //        runat=""server"">{data[card].Title}</asp:HyperLink>
+    //</li>");
 
-            string dynamicFooter1 = footerHtmlBuilder.ToString();
+    //        }
 
-            footerUL.InnerHtml = dynamicFooter1;
+    //        string dynamicFooter1 = footerHtmlBuilder.ToString();
+
+    //        footerUL.InnerHtml = dynamicFooter1;
 
 
            

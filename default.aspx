@@ -155,7 +155,8 @@
             </div>
             <section class="splide mySplide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
-                    <ul runat="server" id="cardsection" class="splide__list">
+                    <ul id="cardsection" runat="server" class="splide__list">
+
                     </ul>
                    
                 </div>
@@ -207,36 +208,48 @@
 
 
     <script>
-        const fetchDataFromServer = async (productId) => {
-            try {
-                const resp = await fetch("../data.json");
-                const data = await resp.json();
-                showCartBtn(data, productId) // Render products after data is fetched
-            } catch (err) {
-                console.log(err);
-            }
-        };
-        function showCartBtn(data, productId) {
-            const object = data.find(item => item.id == productId)
 
-            Toastify({
-                text: `"${object.title}" added to your cart! `,
-                duration: 3000,
-                destination: "/cart.aspx",
-                close: true,
-                gravity: "bottom", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
-                stopOnFocus: true, // Prevents dismissing of toast on hover
-                style: {
-                    background: "#15594E",
-                    "font-family": "Jost",
-                    "font-size": "1rem",
-                },
-                onClick: function () { } // Callback after click
-            }).showToast();
-             
-        }
+//        const CardsUL = document.getElementById("cardsection");
 
+//        const fetchAndLoad = async () => {
+//            try {
+//                const resp = await fetch("../data.json");
+//                const data = await resp.json();
+//                    await loadCards(data)
+
+//            } catch (err) {
+//                console.log(err);
+//            }
+//        };
+//        fetchAndLoad();
+
+
+//    function loadCards(data)  {
+
+//            let dynamicHtml = data.map(card => `
+//    <li class="splide__slide" id="${card.id}">
+//        <div class="splide-card">
+//            <div class="splide-card-container">
+//                <img src="${card.imageUrl}" class="card-img-top" alt="${card.title}">
+//                <span class="card-price">Rs. ${card.price}/=</span> 
+//                <div class="card-body">
+//                    <h5 class="card-title">${card.title}</h5>
+//                    <p class="card-text">${card.description}</p>
+//                    <div class="card-btns">
+//                        <button class="btn" style="color: #fff" onclick="addToCart(event, '${card.id}')">Add To Cart</button>
+//                    </div>
+//                </div>
+//            </div>
+//        </div>
+//    </li>
+//`).join('');
+
+//            CardsUL.innerHTML = dynamicHtml;
+//        }
+
+
+       
+      
         function addToCart(e, productId) {
 
             e.preventDefault()
@@ -264,20 +277,23 @@
         
 
 
-            fetchDataFromServer(productId);
+            Toastify({
+                text: `View Cart`,
+                duration: 3000,
+                destination: "/cart.aspx",
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "#15594E",
+                    "font-family": "Jost",
+                    "font-size": "1rem",
+                },
+            }).showToast();
 
         }
 
-        //function viewCart(e) {
-        //    e.preventDefault();
-        //    // Retrieve the cart items from localStorage
-        //    var cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-      
-
-        //    // Perform additional logic to display the cart items on the cart page
-        //    // You might want to update the DOM dynamically to show the cart contents
-        //}
 
 
 
@@ -332,3 +348,4 @@
     </script>
 
 </asp:Content>
+

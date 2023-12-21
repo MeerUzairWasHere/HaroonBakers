@@ -69,15 +69,6 @@ namespace HaroonBakersLatest
         protected global::System.Web.UI.WebControls.HyperLink HyperLi23nk2;
 
         /// <summary>
-        /// ULcontainer control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ULcontainer;
-
-        /// <summary>
         /// Hyper3223Link2 control.
         /// </summary>
         /// <remarks>
@@ -112,15 +103,6 @@ namespace HaroonBakersLatest
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder BODY;
-
-        /// <summary>
-        /// footerUL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl footerUL;
 
         /// <summary>
         /// HyperLin4324k2 control.
@@ -193,15 +175,6 @@ namespace HaroonBakersLatest
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image2;
-
-        /// <summary>
-        /// ULcontainerMobile control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ULcontainerMobile;
 
         /// <summary>
         /// HyperLink2 control.

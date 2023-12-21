@@ -110,7 +110,7 @@
                             <asp:HyperLink
                                 ID="HyperLink1"
                                 NavigateUrl="tel:7006575308"
-                                runat="server">Call Us: +91-7006575308</asp:HyperLink>
+                                runat="server">Call Us: +91 - 7006575308</asp:HyperLink>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +157,7 @@
                             <i
                                 class="fa-solid fa-angle-down fa-sm"></i>
                         </a>
-                        <ul id="ULcontainer" runat="server">
+                        <ul id="ULcontainer" >
                         </ul>
                     </li>
                     <li
@@ -217,7 +217,7 @@
                         Products
                     </h3>
                     <div>
-                        <ul runat="server" id="footerUL">
+                        <ul  id="footerUL">
                         </ul>
                     </div>
                 </div>
@@ -337,9 +337,7 @@
                         class="modal-header">
                         <h1
                             class="modal-title fs-5"
-                            id="exampleModalLabel">Modal
-                            title
-                        </h1>
+                            id="exampleModalLabel">Login</h1>
                         <button
                             type="button"
                             class="btn-close"
@@ -349,11 +347,17 @@
                     </div>
                     <div
                         class="modal-body">
-                        this
-                        is
-                        a
-                        login
-                        modal
+                       <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input  required type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  
+
                     </div>
                     <div
                         class="modal-footer">
@@ -362,11 +366,7 @@
                             class="btn btn-secondary"
                             data-bs-dismiss="modal">
                             Close</button>
-                        <button
-                            type="button"
-                            class="btn btn-primary">
-                            Save
-                            changes</button>
+                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </div>
             </div>
@@ -433,15 +433,13 @@
                                 id="collapseExample">
                                 <div
                                     class="card card-body">
-                                    <ul runat="server" id="ULcontainerMobile">
+                                    <ul id="ULcontainerMobile">
                                     </ul>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <a
-                                href="aboutUs.aspx">About
-                                Us</a>
+                            <a href="aboutUs.aspx">About Us</a>
                         </li>
                         <li>
                             <a
@@ -503,15 +501,14 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script
-        src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({ once: true, disable: 'mobile'});
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page name without the extension
             var currentPage = getCurrentPageName();
 
-            // Highlight the corresponding navigation item
+            // Highlight the corresponding navigation item  
             highlightNavItem(currentPage);
         });
 
@@ -550,6 +547,37 @@
             cartCountSpan.innerText = cart.length;
         }
         renderCount()
+
+        const headerUL = document.getElementById("ULcontainer");
+        const footerUL = document.getElementById("footerUL");
+        const ULcontainerMobile = document.getElementById("ULcontainerMobile");
+
+        const fetchAndLoadULs = async () => {
+            try {
+                const resp = await fetch("../db/data.json");
+                const data = await resp.json();
+                renderULs(data);
+            } catch (err) {
+                console.log(err);
+            }
+        };
+        fetchAndLoadULs();
+
+
+        function renderULs(data)
+        {
+            const ULhtml = data.map((item) => `<li>
+<a href="#">${item.title}</a>
+    </li>
+`).join("");
+
+            console.log(ULhtml);
+            headerUL.innerHTML = ULhtml;
+            footerUL.innerHTML = ULhtml;
+            ULcontainerMobile.innerHTML = ULhtml;
+        }
+
+
     </script>
 </body>
 </html>

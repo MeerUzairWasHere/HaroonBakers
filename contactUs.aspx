@@ -22,7 +22,7 @@
    <section class="contact-us-section">
     <div class="container">
             <div class="contact-us-cards">
-                <div   data-aos="fade-up" class="contact-us-card ">
+                <div  class="contact-us-card ">
                 <div class="shop-image-div">
                     <asp:Image ID="Image2" ImageUrl="~/assets/shop2.jpg" runat="server" />
                 </div>
